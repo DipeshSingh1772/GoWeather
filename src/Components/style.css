@@ -1,4 +1,5 @@
 .cardm {
+    margin-top: 3%;
     position: absolute;
     display: flex;
     align-items: center;
@@ -135,7 +136,7 @@
     outline-offset: 3px;
     padding: 10px 1rem;
     transition: 0.25s;
-    margin-top: 7%;
+    margin-top: 50%;
   }
   
   .input:focus {
@@ -147,4 +148,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .search-button{
+    flex-grow: 1;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .navbar-div{
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    float: left;
+  }
+
+  .navbar-main{
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 8vh;
+      display: flex;
+      float: left;
+      flex-direction: column;
+      align-items: center;
+      background: rgb(249, 189, 105);
+  }
+
+  .logo-navbar{
+    width: 100%;
+    float: left;
+    font-size: 2em;
+    margin-left: 1%;
+    margin-top: 1%;
   }

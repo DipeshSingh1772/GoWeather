@@ -3,6 +3,7 @@ import Weather from './Components/Weather';
 import './Components/style.css'
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import Navbar from './Components/Navbar';
 
 function App() {
 
@@ -61,8 +62,13 @@ function App() {
 
   return (
     <div className='weather-main-div'>
-      <input type="text" placeholder="Search City" name="text" className="input"
-        value={input} onInput={e => setInput(e.target.value)} />
+      <div className='navbar-div'>
+        <Navbar />
+      </div>
+      <div className='search-button'>
+        <input type="text" placeholder="Search City" name="text" className="input"
+          value={input} onInput={e => setInput(e.target.value)} />
+      </div>
       <Weather data={data} />
     </div>
   );
