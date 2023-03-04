@@ -52,7 +52,7 @@ function App() {
     "cod": 200
   });
 
-  const weatherData = () => {
+  function weatherData() {
     axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${input}&appid=fa74b5d9c4f1511fb76db2423e99ca38`)
       .then(res => {
         setData(res.data)
